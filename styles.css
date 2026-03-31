@@ -311,6 +311,75 @@ h1, h2, h3 {
 /* === CSS:SKILLS-START === */
 .section-skills {
   background-color: #1e293b;
+  padding: 80px 0;
+}
+
+.section-header.text-center {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.skills-title {
+  font-size: 2rem;
+  color: #f1f5f9;
+  margin-bottom: 12px;
+}
+
+.skills-subtitle {
+  color: #94a3b8;
+  font-size: 1.05rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+.skill-category {
+  background-color: #0f172a;
+  border-radius: 12px;
+  padding: 32px;
+  border: 1px solid #334155;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+.category-title {
+  font-size: 1.25rem;
+  color: #38bdf8;
+  margin-top: 0;
+  margin-bottom: 24px;
+  display: inline-block;
+  border-bottom: 2px solid #38bdf8;
+  padding-bottom: 8px;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-item {
+  background-color: #1e293b;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid #475569;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.skill-item:hover {
+  color: #38bdf8;
+  border-color: #38bdf8;
 }
 /* === CSS:SKILLS-END === */
 
