@@ -1,0 +1,207 @@
+/* === CSS:BASE-START === */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans TC", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.8;
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+h1, h2, h3 {
+  color: #f1f5f9;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #1e293b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.header-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #38bdf8;
+  margin-bottom: 8px;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.site-nav a {
+  color: #cbd5e1;
+  font-size: 0.9rem;
+}
+
+.site-nav a:hover {
+  color: #38bdf8;
+}
+
+.site-footer {
+  background-color: #1e293b;
+  text-align: center;
+  padding: 24px 16px;
+  margin-top: auto;
+  color: #94a3b8;
+  font-size: 0.875rem;
+}
+
+.section-base {
+  padding: 48px 0;
+}
+
+.section-base h2 {
+  font-size: 1.75rem;
+  margin-bottom: 16px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #0ea5e9;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0284c7;
+  text-decoration: none;
+}
+
+.btn-outline {
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background-color: #38bdf8;
+  color: #0f172a;
+  text-decoration: none;
+}
+/* === CSS:BASE-END === */
+
+/* === CSS:HERO-START === */
+.section-hero {
+  background-color: #1e293b;
+  text-align: center;
+  padding: 64px 0;
+}
+
+.section-hero h1 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  color: #f1f5f9;
+}
+
+.section-hero p {
+  color: #94a3b8;
+  max-width: 600px;
+  margin: 0 auto 12px;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 480px;
+  margin: 24px auto 0;
+  border-radius: 12px;
+}
+/* === CSS:HERO-END === */
+
+/* === CSS:ABOUT-START === */
+.section-about {
+  background-color: #0f172a;
+}
+/* === CSS:ABOUT-END === */
+
+/* === CSS:SKILLS-START === */
+.section-skills {
+  background-color: #1e293b;
+}
+/* === CSS:SKILLS-END === */
+
+/* === CSS:PROJECTS-START === */
+.section-projects {
+  background-color: #0f172a;
+}
+/* === CSS:PROJECTS-END === */
+
+/* === CSS:CONTACT-START === */
+.section-contact {
+  background-color: #1e293b;
+}
+/* === CSS:CONTACT-END === */
+
+/* === CSS:RWD-START === */
+@media (min-width: 768px) {
+  .header-inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .site-logo {
+    margin-bottom: 0;
+  }
+
+  .section-hero h1 {
+    font-size: 2.75rem;
+  }
+
+  .section-base h2 {
+    font-size: 2rem;
+  }
+}
+/* === CSS:RWD-END === */
