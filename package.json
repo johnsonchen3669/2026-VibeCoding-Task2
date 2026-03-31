@@ -1,0 +1,18 @@
+{
+  "name": "website-check",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check:all": "node scripts/check-all.mjs",
+    "predeploy": "npm run check:all",
+    "deploy": "gh-pages -d ."
+  },
+  "dependencies": {
+    "cheerio": "1.0.0",
+    "playwright": "1.47.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
