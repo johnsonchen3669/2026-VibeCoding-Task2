@@ -185,9 +185,54 @@
       <!-- === SECTION:CONTACT-START === -->
       <section id="contact" class="section-contact section-base">
         <div class="container">
-          <h2>聯絡我</h2>
-          <p>此處目前為占位內容。未來會由 Section SDD 產生正式的聯絡資訊區塊，包含 Email、電話、GitHub、LinkedIn 等聯絡管道。</p>
-          <p>開發者請注意：當收到新的 Contact Section SDD 產出後，請將新的 section 程式碼整段貼在 SECTION:CONTACT-START 與 SECTION:CONTACT-END 兩個註解之間，取代現有的占位內容。</p>
+          <div class="contact-wrapper">
+            <div class="contact-info">
+              <h2 class="contact-title">準備好開始新專案了嗎？</h2>
+              <p class="contact-desc">無論您是需要一位前端開發者協助您的下一個大項目，或者想單純交流技術心得，都非常歡迎隨時與我聯繫！</p>
+              
+              <div class="contact-methods">
+                <a href="mailto:hello@example.com" class="contact-item">
+                  <span class="contact-icon">📧</span>
+                  <div class="contact-details">
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">hello@example.com</span>
+                  </div>
+                </a>
+                <a href="#github" class="contact-item">
+                  <span class="contact-icon">💻</span>
+                  <div class="contact-details">
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-value">github.com/xiaoming</span>
+                  </div>
+                </a>
+                <a href="#linkedin" class="contact-item">
+                  <span class="contact-icon">💼</span>
+                  <div class="contact-details">
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">linkedin.com/in/xiaoming</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            
+            <div class="contact-form-container">
+              <form class="contact-form" action="#contact">
+                <div class="form-group">
+                  <label for="name" class="form-label">您的姓名</label>
+                  <input type="text" id="name" class="form-input" placeholder="王大明" required>
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">您的信箱</label>
+                  <input type="email" id="email" class="form-input" placeholder="wang@example.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="message" class="form-label">訊息內容</label>
+                  <textarea id="message" class="form-textarea" placeholder="想跟我分享什麼呢？" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">傳送訊息</button>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
       <!-- === SECTION:CONTACT-END === -->
